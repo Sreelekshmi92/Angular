@@ -1,0 +1,20 @@
+<p>
+  samplecomp works!
+</p>
+{{dt.msg}} <br>
+<button type="button" (click)="get()">Get Data From Server</button>
+<br><BR>
+<button type="button" (click)="gettabledata()">Get data From table</button>
+<BR>
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+    <tr *ngFor="let e of List[0]">
+      <td>{{e.id}}</td>
+      <td>{{e.Name}}</td>
+      <td>{{e.Age}}</td>
+    </tr>
+  </table>
